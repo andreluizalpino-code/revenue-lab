@@ -638,8 +638,10 @@ html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
     width: 1.5px; height: auto;
     background: linear-gradient(180deg, var(--gold) 0%, var(--gold-bright) 100%);
   }
-  .stage { text-align: left; display: grid; grid-template-columns: 54px 1fr; gap: 24px; align-items: start; padding: 16px 0; }
-  .stage .marker { margin: 0; }
+  .stage { text-align: left; display: grid; grid-template-columns: 54px 1fr; gap: 8px 24px; align-items: start; padding: 16px 0; }
+  .stage .marker { margin: 0; grid-row: 1; grid-column: 1; }
+  .stage h3 { grid-row: 1; grid-column: 2; align-self: center; }
+  .stage p { grid-row: 2; grid-column: 2; }
   .principles { grid-template-columns: 1fr; }
   .deliverable { grid-template-columns: 60px 1fr; gap: 8px 22px; }
   .deliverable .dnum { grid-row: span 2; }
