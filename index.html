@@ -107,7 +107,12 @@ html[data-theme="dark"] {
   --line-strong: rgba(247,244,238,0.22);
   --glass:       rgba(16,30,48,0.55);
   --accent: #CAA557;
+  /* Re-resolve color at this scope so descendants inherit off-white
+     even when body's `color: var(--text)` was computed in light mode. */
+  color: var(--text);
 }
+.bg-navy h1, .bg-navy h2, .bg-navy h3,
+.bg-navy h4, .bg-navy h5, .bg-navy h6 { color: var(--text); }
 
 html { scroll-behavior: smooth; }
 
