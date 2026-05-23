@@ -1,0 +1,8 @@
+# Whitelist: ignora tudo por padrão, libera só o que vai pro GitHub Pages
+*
+*/
+
+# Versionado:
+!.gitignore
+!docs/
+!docs/**
